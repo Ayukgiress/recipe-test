@@ -3,7 +3,7 @@ const searchInput = document.getElementById('user-value')
 const searchResult = document.getElementById('result')
 
 searchInput.addEventListener('input', function () {
-  const searchTerm = searchInput.value;
+  const searchTerm = searchInput.value
 
   // Call the debounced search function with the input value
   debouncedSearch(searchTerm)
