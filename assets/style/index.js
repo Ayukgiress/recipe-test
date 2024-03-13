@@ -11,7 +11,7 @@ fetch(api)
   })
   .catch((error) => console.error('Error fetching data:', error))
 
-function displayRecipe(recipe) {
+function displayRecipe (recipe) {
   const name = recipe.strMeal
   const imgSrc = recipe.strMealThumb
   const instructions = recipe.strInstructions
@@ -26,7 +26,7 @@ function displayRecipe(recipe) {
   recipeContainer.appendChild(myRecipe)
 
   const img = myRecipe.querySelector('.img')
-  const popup = myRecipe.querySelector('.instructions');
+  const popup = myRecipe.querySelector('.instructions')
 
   img.addEventListener('mouseover', function () {
     popup.classList.add('show')
